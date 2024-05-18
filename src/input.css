@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply font-manrope font-extrabold text-6xl/[75px] text-black;
+    }
+
+    h2{
+        @apply font-manrope font-extrabold text-5xl/[65px] text-black;
+    }
+} 
+
+
+
+.right_mark::before{
+    content: url('/images/2-right_mark.svg');
+    top: 3px;
+    position: absolute;
+    left: -26px;
+    padding-left: 32px
+    
+}
+
