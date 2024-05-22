@@ -30,27 +30,35 @@
     <!-- ========== Start of Header section ========== -->
     <header class="w-full bg-custom-grad">
 
-        <div class="container mx-auto">
+        <div class="container relative px-6 mx-auto md:px-0">
 
 
-            <nav class="flex md:items-center md:justify-between py-9">
+            <nav class="flex items-center justify-between py-9">
 
                 <!-- Logo -->
                 <div>
                     <span class="text-xl font-semibold cap font-[Gilroy-Medium]">AR SHAKIR</span>
                 </div>
+
                 <!-- Menu -->
-                <ul class="flex gap-9">
-                    <li><a href="#">Product <i class="ml-2 fas fa-angle-down drop" aria-hidden="true"></i></a></li>
-                    <li><a href="#">Template <i class="ml-2 fas fa-angle-down drop" aria-hidden="true"></i></a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
+                <div
+                    class="absolute z-10 w-full bg-[#9AD2E7] shadow-2xl lg:shadow-none lg:rounded-none rounded-lg shadow-[#9AD2E7]	 nav-links lg:bg-transparent lg:w-fit lg:static -top-96">
+                    <ul class="flex flex-col lg:flex-row gap-9  h-[300px] lg:h-auto justify-center  p-3 lg:p-0">
+                        <li><a href="#">Product <i class="ml-2 fas fa-angle-down drop" aria-hidden="true"></i></a></li>
+                        <li><a href="#">Template <i class="ml-2 fas fa-angle-down drop" aria-hidden="true"></i></a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#" class="">Pricing</a></li>
+                    </ul>
+                </div>
 
                 <!-- Buttons -->
-                <div class="space-x-4">
-                    <a href="#">Sign in</a>
-                    <button class="px-8 py-3.5 text-white bg-[#4F46BA]">Start free</button>
+                <div class="flex items-center gap-5 lg:gap-4">
+                    <a href="#" class="hidden lg:block">Sign in</a>
+                    <button class="px-8 py-3.5 text-white bg-[#4F46BA] rounded-full lg:rounded-none">Start free</button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer lg:hidden"></ion-icon>
+
+
 
                 </div>
             </nav>
@@ -58,8 +66,10 @@
 
 
             <!-- Start HERO section -->
-            <div class="grid md:items-center md:grid-cols-2">
-                <div class="left cols">
+            <div
+                class="grid items-center justify-items-center lg:justify-items-stretch lg:grid-cols-2 gap-y-8 lg:gap-y-0 mt-14 lg:mt-0">
+
+                <div class="text-center lg:text-start left cols">
 
                     <h1>Managing freelance payments has never been easier</h1>
                     <p class="text-[#64607D] mt-6 text-xl/[30px] mb-14 ">Yet bed any for travelling assistance
@@ -68,7 +78,7 @@
                         thoughts all exercise blessing.
                     </p>
 
-                    <div class="flex gap-12 md:items-center hero_btns">
+                    <div class="flex items-center justify-center gap-12 lg:justify-stretch hero_btns">
                         <button class="py-4 text-white rounded-full px-9 bg-blue">Get started</button>
 
                         <div class="flex items-center gap-3 play_btn">
@@ -94,6 +104,7 @@
                         <img src="/images/hero-image.png" class="max-h-[750px] md:w-[509px] object-top object-cover"
                             alt="hero-image">
                     </div>
+
                 </div>
 
 
@@ -117,13 +128,13 @@
 
     <!-- ========== Start  of Client companies  Section========== -->
 
-    <section class="bg-[#F5F6F8]">
+    <section class="bg-[#F5F6F8] w-full">
 
-        <div class="wrapper max-w-[1258px] space-y-9 mx-auto pt-16 pb-20">
+        <div class="wrapper max-w-[1258px] space-y-9 mx-auto pt-16 pb-20  px-6 md:px:0">
             <p class="text-2xl text-center">Over 32k+ software businesses growing with AR Shakir.</p>
 
             <!-- client list -->
-            <div class="flex flex-wrap justify-center space-x-9">
+            <div class="flex flex-wrap justify-between">
                 <img src="/images/Group-0.svg" class="inline-block object-contain" alt="openZeppelin">
                 <img src="/images/Group-1.svg" class="inline-block object-contain" alt="Oracle">
                 <img src="/images/Group-2.svg" class="inline-block object-contain" alt="morpheus">
@@ -142,10 +153,11 @@
 
     <!-- ========== Start Automated Portfolio Tracking section ========== -->
 
-    <div class="wrapper max-w-[1171px] mx-auto flex  md:items-center md:justify-between flex-wrap my-[71px]">
+    <div
+        class="wrapper max-w-[1171px] mx-auto flex  md:items-center  lg:flex-row flex-col items-center gap-y-14 lg:gap-y-0  lg:justify-between  my-[71px] px-6">
 
         <!-- left-side div -->
-        <div class="max-w-[646px]">
+        <div class="max-w-[646px] text-center lg:text-start">
 
             <h2>Automated portfolio tracking</h2>
             <p class="mt-5 text-base">Yet bed any for travelling assistance indulgence unpleasing.<br> Not thoughts
@@ -175,7 +187,7 @@
 
     <!-- Financial Tracking Feature -->
 
-    <div class="container grid gap-8 mx-auto md:grid-cols-2 xl:grid-cols-3 2xl:gap-20">
+    <div class="container grid justify-center gap-8 px-6 mx-auto lg:grid-cols-2 xl:grid-cols-3 2xl:gap-20 md:px-0">
 
         <!-- Div-1 -->
         <div class="bg-white border border-[#DBE4E9] rounded-[20px] w-[380px] md:w-[auto]">
@@ -221,10 +233,10 @@
 
     <!-- ========== Why Choose us Section  ========== -->
 
-    <div class="container mx-auto mt-32">
+    <div class="container px-6 mx-auto mt-32 md:px-0 ">
 
         <!-- why section-1 -->
-        <div class="grid lg:grid-cols-2">
+        <div class="grid justify-center lg:grid-cols-2">
             <div>
                 <!-- <img src="/images/why_choose_img.png" class="h-[500px]" alt="why_choose_us_img"> -->
                 <img src="/images/Group 4362.svg" class="" alt="why_choose_us_img">
@@ -261,7 +273,7 @@
 
 
         <!-- why section-2 -->
-        <div class="grid lg:grid-cols-2">
+        <div class="grid mb-24 lg:grid-cols-2">
 
             <div class="pt-32">
                 <p class="text-[#3734A9] font-bold text-sm mb-3">WHY CHOOSE US</p>
@@ -273,7 +285,7 @@
                 </div>
 
                 <!-- Testimonila Blockquote -->
-                <div class="py-10 px-9 bg-[#C4C4C4]  bg-opacity-30 rounded-[20px] w-[479px] relative">
+                <div class="py-10 px-9 bg-[#C4C4C4]  bg-opacity-30 rounded-[20px] lg:w-[479px] relative">
                     <blockquote class="relative text-sm font-semibold">Wise busy past both park when an ye no. Nay
                         likely her length sooner thrown sex lively income. The expense windows .</blockquote>
 
@@ -284,12 +296,9 @@
 
                 </div>
 
-
-
-
             </div>
 
-            <div>
+            <div class="hidden lg:block">
                 <img src="/images/Why-choose.svg" class="" alt="why_choose_us_img">
             </div>
         </div>
@@ -300,8 +309,8 @@
 
 
     <!-- ========== Start Features Section  ========== -->
-    <section class="bg-[#C9E7F2] pt-36 pb-24 relative">
-        <div class="container mx-auto">
+    <section class="bg-[#C9E7F2] pt-36 pb-24 relative w-full">
+        <div class="container px-6 mx-auto md:px-0">
 
             <h1>Features that blows mind</h1>
             <p class="text-base/[29px] mt-9 mb-12">We so opinion friends me message as delight. Whole front do of plate
@@ -365,22 +374,23 @@
 
     <!-- ========== Start Testimonials Section ========== -->
 
-    <section class="my-[150px] relative h-[611px]">
+    <section class="my-[150px] relative h-[611px] w-full">
         <!--Placeholder div/section for placing absolute section, `height 700px` to match height of testimonilas section` -->
 
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-            <div class="absolute top-0 left-0 w-full">
-                <div class="w-[1442px] relative translate-x-20">
+        <div class="top-0 left-0 lg:absolute lg:w-full lg:h-full lg:overflow-hidden">
+            <div class="top-0 lg:absolute lg:left-0 lg:w-full">
+                <div class="lg:w-[1442px] mx-auto relative lg:translate-x-20 px-6 ">
                     <h1 class="text-7xl">Testimonials</h1>
                     <p class="text-base/[29px] mt-9 mb-16">We so opinion friends me message as delight. Whole front do
                         of plate heard oh <br> ought. His defective nor convinced residence own.</p>
 
                     <!-- Testimonials Cards -->
 
-                    <div class="grid gap-11 md:grid-cols-2">
+                    <div class="grid gap-11 lg:grid-cols-2">
 
                         <!-- card-1 -->
-                        <div class="bg-white border border-[#CFCFCF] flex  w-[699px] h-[410px] rounded-[10px] relative">
+                        <div
+                            class="bg-white border border-[#CFCFCF] flex lg:flex-row flex-col items-center w-fit lg:w-[699px] lg:h-[410px] rounded-[10px] relative">
                             <!-- content -->
                             <div class="px-[30px] py-20">
                                 <p class="text-2xl/[36px] font-semibold mb-10 w-[355px] ">Wise busy past both park when
@@ -390,9 +400,9 @@
                                 <p class="text-xl font-semibold">- Mike Taylor, Web Designer</p>
                             </div>
                             <!-- image -->
-                            <div class="px-6 py-5">
-                                <img src="/images/Testinonilas-1.png" class=" w-[240px] h-[350px] object-cover"
-                                    alt="testimoinial">
+                            <div class="hidden px-6 py-5 lg:block">
+                                <img src="/images/Testinonilas-1.png"
+                                    class=" w-fit h-auto lg:w-[240px] lg:h-[350px] object-cover" alt="testimoinial" />
                             </div>
 
                             <!-- quotes -->
@@ -401,7 +411,7 @@
 
                         <!-- card-2 -->
                         <div
-                            class="bg-white border border-[#CFCFCF] flex   w-[699px] h-[410px] rounded-[10px] relative">
+                            class="bg-white border border-[#CFCFCF] lg:flex   w-[699px] h-[410px] rounded-[10px] relative  hidden">
                             <!-- content -->
                             <div class="px-[30px] py-20">
                                 <p class="text-2xl/[36px] font-semibold mb-10 w-[355px]">Wise busy past both park when
@@ -494,7 +504,7 @@
 
     <section class="mt-36 lg:mt-[150px] w-full">
 
-        <div class="container mx-auto">
+        <div class="container px-6 mx-auto md:px-0">
             <h1 class="mb-16 text-7xl">Recent Blogs</h1>
 
 
@@ -592,7 +602,7 @@
 
     <section class="mt-36 lg:mt-[150px] w-full">
 
-        <div class="container mx-auto">
+        <div class="container px-6 mx-auto md:px-0">
 
             <h1 class="mb-16 text-7xl">Frequently asked questions</h1>
 
@@ -703,16 +713,16 @@
     <!-- ========== Start Discover Section   ========== -->
 
     <div
-        class="container mx-auto my-36 text-white   grid place-items-center content-center   bg-[#3734A9] rounded-[20px] h-[438px] relative">
+        class="container mx-auto my-36 text-white   grid place-items-center content-center   bg-[#3734A9] rounded-[20px] h-[438px] relative px-6 md:px-0">
 
 
-        <h2 class="mb-10 text-5xl text-center text-white px-52">Discover a better way to manage spendings</h2>
+        <h2 class="px-20 mb-10 text-5xl text-center text-white md:px-52">Discover a better way to manage spendings</h2>
         <button class="px-10 py-5 text-lg bg-[#FF7F5C] rounded-[10px]">Get Started Now</button>
 
 
         <!-- Decorative accents -->
         <img src="/images/discover-icon-1.svg" class="absolute top-12 right-28" alt="">
-        <img src="/images/discover-icon-2.svg" class="absolute bottom-28 left-60" alt="">
+        <img src="/images/discover-icon-2.svg" class="absolute hidden bottom-28 left-60 lg:block" alt="">
         <img src="/images/discover-icon-3.svg" class="absolute bottom-11 left-28" alt="">
         <img src="/images/discover-icon-4.svg" class="absolute bottom-14 right-9" alt="">
         <img src="/images/discover-icon-5.svg" class="absolute top-14 left-48" alt="">
@@ -726,10 +736,11 @@
 
     <footer class="mb-14">
 
-        <div class="container grid mx-auto lg:grid-cols-[auto,auto,auto,auto] md:grid-cols-[auto,auto] gap-y-16 ">
+        <div
+            class="container grid mx-auto lg:grid-cols-[auto,auto,auto,auto] md:grid-cols-[auto,auto] gap-y-16 px-6 md:px-0 ">
 
             <!-- Compnay info -->
-            <div class="lg:mr-14">
+            <div class="order-last lg:order-none lg:mr-14">
                 <div class="text-xl font-bold  font-[Gilroy-Medium]">Ar Shakir</div>
                 <p class="text-base text-[#757095] font-medium tracking-[-2%] mt-[18px] mb-8">Finance helps companies
                     manage payments easily. </p>
@@ -795,6 +806,43 @@
 
 
 
+
+
+
+
+    <!-- Ionic icons js link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+
+    </script>
+
+
+
+    <!-- Js part for toogle menu btn -->
+    <script>
+        const onToggleMenu = (e) => {
+            console.log(e);  // just check what it shows
+            console.log(e.name);  // 'menu'   so  onClick we need to chnage the name to 'close'
+
+            e.name == 'menu' ? (e.name = 'close') : e.name = 'menu'
+
+            // logic for toggling the class property
+            const navLinks = document.querySelector('.nav-links');
+
+            if (navLinks.classList.contains('-top-96')) {
+                navLinks.classList.remove('-top-96');
+                navLinks.classList.add('top-28');
+            } else {
+                navLinks.classList.remove('top-28');
+                navLinks.classList.add('-top-96');
+            }
+
+            console.log(navLinks);
+
+
+        }
+
+
+    </script>
 
 </body>
 
