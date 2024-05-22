@@ -16,6 +16,7 @@
 
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Tailwind Output css File -->
     <link rel="stylesheet" href="/src/output.css">
@@ -40,8 +41,8 @@
                 </div>
                 <!-- Menu -->
                 <ul class="flex gap-9">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Template</a></li>
+                    <li><a href="#">Product <i class="ml-2 fas fa-angle-down drop" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Template <i class="ml-2 fas fa-angle-down drop" aria-hidden="true"></i></a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Pricing</a></li>
                 </ul>
@@ -70,10 +71,10 @@
                     <div class="flex gap-12 md:items-center hero_btns">
                         <button class="py-4 text-white rounded-full px-9 bg-blue">Get started</button>
 
-                        <div class="space-x-3 play_btn">
-                            <button class="h-14 w-14 bg-[#22D497] rounded-full">
-                                <div class="text-white">play</div>
-                            </button>
+                        <div class="flex items-center gap-3 play_btn">
+
+                            <div> <img src="/images/cta_play.svg" alt=""></div>
+
                             <span>See How It Works</span>
                         </div>
                     </div>
@@ -589,7 +590,7 @@
 
     <!-- ========== Start FAQ Section  ========== -->
 
-    <section class="mt-36 lg-[150px] w-full mb-24">
+    <section class="mt-36 lg:mt-[150px] w-full">
 
         <div class="container mx-auto">
 
@@ -681,7 +682,7 @@
                     <!-- FAQ CTA Button -->
                     <div class="mt-12 text-center">
                         <button
-                            class="text-white py-[22px] px-[100px] font-semibold text-base bg-[#FF7F5C] whitespace-nowrap">Shoot
+                            class="text-white py-5 px-24 font-semibold text-base bg-[#FF7F5C] whitespace-nowrap">Shoot
                             a
                             Direct Mail</button>
                     </div>
@@ -699,6 +700,97 @@
     <!-- ========== End FAQ Section ========== -->
 
 
+    <!-- ========== Start Discover Section   ========== -->
+
+    <div
+        class="container mx-auto my-36 text-white   grid place-items-center content-center   bg-[#3734A9] rounded-[20px] h-[438px] relative">
+
+
+        <h2 class="mb-10 text-5xl text-center text-white px-52">Discover a better way to manage spendings</h2>
+        <button class="px-10 py-5 text-lg bg-[#FF7F5C] rounded-[10px]">Get Started Now</button>
+
+
+        <!-- Decorative accents -->
+        <img src="/images/discover-icon-1.svg" class="absolute top-12 right-28" alt="">
+        <img src="/images/discover-icon-2.svg" class="absolute bottom-28 left-60" alt="">
+        <img src="/images/discover-icon-3.svg" class="absolute bottom-11 left-28" alt="">
+        <img src="/images/discover-icon-4.svg" class="absolute bottom-14 right-9" alt="">
+        <img src="/images/discover-icon-5.svg" class="absolute top-14 left-48" alt="">
+
+    </div>
+
+    <!-- ========== End Discover Section  ========== -->
+
+
+    <!-- ========== Start of Footer section  ========== -->
+
+    <footer class="mb-14">
+
+        <div class="container grid mx-auto lg:grid-cols-[auto,auto,auto,auto] md:grid-cols-[auto,auto] gap-y-16 ">
+
+            <!-- Compnay info -->
+            <div class="lg:mr-14">
+                <div class="text-xl font-bold  font-[Gilroy-Medium]">Ar Shakir</div>
+                <p class="text-base text-[#757095] font-medium tracking-[-2%] mt-[18px] mb-8">Finance helps companies
+                    manage payments easily. </p>
+
+                <!-- social media icons -->
+                <div class="space-x-4">
+                    <i class="text-xl text-[#3734A9] w-5 fab fa-linkedin" aria-hidden="true"></i>
+                    <i class="text-xl text-[#3734A9] w-5 fab fa-facebook-messenger" aria-hidden="true"></i>
+                    <i class="text-xl text-[#3734A9] w-5 fab fa-twitter" aria-hidden="true"></i>
+                    <i class="text-xl text-[#3734A9] w-5 fas fa-infinity" aria-hidden="true"></i>
+                </div>
+            </div>
+
+
+            <!-- Quick links -->
+            <div class="mr-24">
+                <div class="mb-6 text-xl font-bold">Company</div>
+                <ul class="space-y-[18px]">
+                    <li class="text-base font-medium text-[#181433]"><a href="#">About us</a></li>
+                    <li class="text-base font-medium text-[#181433]"><a href="#">Careers</a></li>
+                    <li class="text-base font-medium text-[#181433]"><a href="#">Blog</a></li>
+                    <li class="text-base font-medium text-[#181433]"><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Resources -->
+            <div class="mr-20">
+                <div class="mb-6 text-xl font-bold">Resources</div>
+                <ul class="space-y-[18px]">
+                    <li class="text-base font-medium text-[#181433]"><a href="#">Proposal Template</a></li>
+                    <li class="text-base font-medium text-[#181433]"><a href="#">Invoice Template</a></li>
+                    <li class="text-base font-medium text-[#181433]"><a href="#">Tutorial</a></li>
+                    <li class="text-base font-medium text-[#181433]"><a href="#">How to write a contract</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Newsletter section -->
+            <div class="w-[389px]">
+                <div class="mb-6 text-xl font-bold">Join Our Newsletter</div>
+
+                <form action="" class="flex">
+                    <input type="text" placeholder="Your email address"
+                        class="bg-[#EEEEFF] h-14 w-[240px] flex-1 placeholder-margin-left placeholder-[#181433] placeholder-opacity-[20%]">
+                    <input type="submit" class="bg-[#3734A9] text-white py-[13px] px-9 h-14 w-[149px]"
+                        value="Subscribe">
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <p class="text-base text-center pt-10 border-t-2 border-[#E5E5EA] mt-12 text-[#181433] tracking-[-2%]">Copyright
+            @ AR Shakir 2022. All Rights
+            Reserved.</p>
+
+    </footer>
+
+    <!-- ========== End of Footer section ========== -->
 
 
 

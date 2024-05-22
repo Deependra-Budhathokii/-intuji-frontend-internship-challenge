@@ -23,3 +23,8 @@
     
 }
 
+
+.placeholder-margin-left::placeholder {
+    padding-left: 1rem;
+}
+
