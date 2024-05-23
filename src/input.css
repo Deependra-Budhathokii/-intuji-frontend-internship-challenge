@@ -42,8 +42,28 @@
 }
 
 
+/* Box shadow */
+
+.custom-box-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* .custom-box-shado {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+} */
+
+.custom-box-shadow-2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+
+
+
+
+
 .placeholder-margin-left::placeholder {
     padding-left: 1rem;
+    font-size: 13px;
 }
 
 
@@ -67,7 +87,19 @@
       }
     }
   
-  
+  }
+
+
+
+
+
+  @layer components{
+
+    .card-style-comp{      
+        @apply duration-300 ease-linear hover:scale-105 overflow-hidden custom-box-shadow
+     
+    }
+
   }
   
 
